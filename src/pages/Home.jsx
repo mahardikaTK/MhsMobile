@@ -46,10 +46,14 @@ const Home = () => {
 
           <View style={{
             height: 150,
-            backgroundColor: 'red',
+
             borderRadius: 17,
             borderWidth: 1,
-          }}></View>
+          }}>
+            <View>
+              <Image resizeMode='contain' style={{ height:149, width:185, borderRadius:14}} source={require('../assets/images/tehoolong.png')}/>
+            </View>
+          </View>
           <Text>Teh oolong</Text>
             <Text>Rp. 23.000</Text>          
         </View>
@@ -68,6 +72,9 @@ const Home = () => {
             borderRadius: 17,
             borderWidth: 1,
           }}>
+                        <View>
+              <Image resizeMode='contain' style={{ height:149, width:185, borderRadius:14}} source={require('../assets/images/tehoolong.png')}/>
+            </View>
         </View>
                   <Text>Burger ayam</Text>
           <Text>Rp. 23.000</Text> 
@@ -96,7 +103,11 @@ const Home = () => {
             backgroundColor: 'red',
             borderRadius: 17,
             borderWidth: 1,
-          }}></View>
+          }}>
+                        <View>
+              <Image resizeMode='contain' style={{ height:149, width:185, borderRadius:14}} source={require('../assets/images/tehoolong.png')}/>
+            </View>
+          </View>
           <Text>Teh oolong</Text>
             <Text>Rp. 23.000</Text>          
         </View>
@@ -115,6 +126,9 @@ const Home = () => {
             borderRadius: 17,
             borderWidth: 1,
           }}>
+                        <View>
+              <Image resizeMode='contain' style={{ height:149, width:185, borderRadius:14}} source={require('../assets/images/tehoolong.png')}/>
+            </View>
         </View>
                   <Text>Teh oolong</Text>
           <Text>Rp. 23.000</Text> 
