@@ -1,14 +1,22 @@
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
-import { View, Text, Image, ScrollView, TextInput, Alert, StyleSheet, TouchableHighlight, } from 'react-native';
-import React from 'react'; 
-import Home from "./src/pages/Home.jsx"
+import Home from './src/pages/Home.jsx';
+import Detail from './src/pages/detail.jsx';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Success from './src/pages/success.jsx';
+const Stack = createNativeStackNavigator();
+
 const App = () => {
   return (
-    <View>
-      <Home />
-    </View>
-
-  )
-}
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Detail" component={Detail} />
+        <Stack.Screen name="Success" component={Success} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 export default App;
